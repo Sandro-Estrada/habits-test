@@ -1,0 +1,17 @@
+/* Define Global Styles */
+@font-face {
+  font-family: "Fuse Regular";
+  src: url("../fonts/Fuse-Regular.ttf");
+}
+@font-face {
+  font-family: "Fuse Light";
+  src: url("../fonts/Fuse-Light.ttf");
+}
+@font-face {
+  font-family: "Kievit Bold";
+  src: url("../fonts/Kievit_Bold.ttf");
+}
+@font-face {
+  font-family: "Sultan";
+  src: url("../fonts/Sultan.ttf");
+}

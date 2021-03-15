@@ -1,0 +1,66 @@
+//Colors
+$main-blue: #3c5cbf;
+$completed-green: #00875f;
+$pending-gray: #8b939e;
+$hover-white: #e4e5e9;
+$hover-outline-blue: #393f57;
+$normal-input-border: #c7cad1;
+$error-color: #a60b2b;
+$text-color: #1d223f;
+$input-placeholder-color: #717787;
+$white: #fff;
+
+// MEDIA QUERIES
+@mixin tv {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin smallDesktop {
+    @media screen and (min-height: 700px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 760px) {
+        @content;
+    }
+}
+
+@mixin notDesktop {
+    @media screen and (max-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin tabletOnly {
+    @media screen and (min-width: 760px) and (max-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin mobileOnly {
+    @media screen and (max-width: 760px) {
+        @content;
+    }
+}
+
+@mixin smallPhone {
+    @media screen and (min-width: 0px) and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin ie11 {
+    @media all and (-ms-high-contrast:none) {
+        @content;
+    }
+}

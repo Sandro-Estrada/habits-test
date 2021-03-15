@@ -1,0 +1,36 @@
+.todos__table {
+    background-color: $white;
+    padding: 1rem;
+
+    .actions {
+        position: relative;
+        display: contents;
+
+        @include mobileOnly {
+            display: flex;
+
+            input {
+                margin-right: initial !important;
+                width: 52%;
+                padding: 0rem;
+            }
+
+            button {
+                margin-left: initial !important;
+                width: 48%;
+            }
+        }
+    }
+
+    .separation {
+        width: 0.75px;
+        height: 32px;
+        position: absolute;
+        top: 5px;
+        border: 0.5px solid $normal-input-border;
+
+        @include mobileOnly {
+            left: 54%;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.dynamic__modal {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__isopen {
+    display: grid;
+}
+
+.modal__dialog {
+    background: #fff;
+    padding: 10px;
+    width: 500px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+
+    @include smallPhone {
+        width: 330px;
+    }
+
+    @include mobileOnly {
+        width: 375px;
+
+        .buttons {
+            justify-content: flex-start !important;
+        }
+    }
+
+    .modal__content {
+        padding: 1rem;
+
+        .modal__body {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

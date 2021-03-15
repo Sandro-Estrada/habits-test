@@ -1,0 +1,49 @@
+.main-btn {
+    padding: 0.7rem 1rem;
+    color: $main-blue;
+    border: none;
+    outline: none;
+    background-color: $white;
+    transition: 0.2s all ease-in;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: $hover-white;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.cancel-btn {
+    padding: 0.7rem 1rem;
+    color: $text-color;
+    border: none;
+    outline: none;
+    background-color: $hover-white;
+    transition: 0.2s all ease-in;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: $hover-white;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.save-btn {
+    padding: 0.7rem 1rem;
+    color: $white;
+    border: none;
+    outline: none;
+    background-color: $main-blue;
+    transition: 0.2s all ease-in;
+    border-radius: 3px;
+
+    &:focus {
+        outline: none;
+    }
+}

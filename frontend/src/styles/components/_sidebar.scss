@@ -1,0 +1,77 @@
+.sidebar {
+    background-color: $white;
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 850ms;
+    box-shadow: -10px 0px 10px 1px rgba(0, 0, 0, 0.1);
+
+    @include smallPhone {
+        width: 350px;
+    }
+
+    @include mobileOnly {
+        width: 365px;
+    }
+
+    .sidebar__header {
+        width: 100%;
+        position: relative;
+        height: 150px;
+
+        .close__sidebar {
+            color: $pending-gray;
+            font-size: 35px;
+            position: absolute;
+            right: 30px;
+            top: 50px;
+        }
+    }
+
+    &.active {
+        right: 0;
+        transition: 350ms;
+    }
+
+    .sidebar__content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+        height: auto;
+
+        select {
+            width: 100%;
+        }
+    }
+
+    .sidebar__footer {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+        position: relative;
+
+        .sidebar__buttons {
+            position: absolute;
+            top: 22%;
+            color: $text-color;
+
+            @include smallPhone {
+                top: 2%;
+            }
+
+            @include mobileOnly {
+                top: 10%;
+            }
+
+            svg {
+                color: $main-blue;
+            }
+        }
+    }
+}
